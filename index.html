@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Order Pick Up Request Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h2>Order Pickup Request Form</h2>
+        <h4>P & L Cleaners</h4>
+        <div class="page">
+            <div class="form">
+                <form class="pickup-request">
+                    <input type="text" id="name" name="First Name"
+                        placeholder="First Name" required
+                        minlength="4" maxlength="8" size="10" />
+                    <input type="text" id="name" name="First Name"
+                        placeholder="Last Name" required
+                        minlength="4" maxlength="8" size="10" />
+                    <input type="tel" id="phone" name="phonenumber"
+                        placeholder="phone number"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    <input type="datetime-local" id="date" name="date">
+                    <button onclick="alertUser()">Submit Pick Up
+                        Request</button>
+                </form>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
